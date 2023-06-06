@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>3ee9b130-fcb8-413a-86bb-9db6d232a2ce.SCHEMA:scrumble.public</OriginalElement>
+  <nodes>
+    <node x="396.25735294117635" y="434.0">3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint_repartition</node>
+    <node x="492.25" y="55.0">3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint</node>
+    <node x="763.2573529411764" y="456.0">3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint_retrospective</node>
+    <node x="172.2573529411764" y="434.0">3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint_repartition_label</node>
+    <node x="179.7573529411764" y="77.0">3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_user</node>
+    <node x="582.2573529411764" y="445.0">3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint_reste</node>
+    <node x="-126.5" y="467.5">3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_user_labels</node>
+    <node x="499.25" y="-160.0">3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_project</node>
+    <node x="-82.85294117647061" y="165.0">3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_label</node>
+    <node x="36.25735294117641" y="467.5">3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_label_user</node>
+    <node x="282.6323529411764" y="-149.0">3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_team</node>
+    <node x="728.2573529411764" y="627.0">3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint_retrospective_comment</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint" target="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_team" relationship="REFERENCES">
+      <point x="-42.25" y="-159.5" />
+      <point x="534.5" y="30.0" />
+      <point x="367.1323529411764" y="30.0" />
+      <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_user_labels" target="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_label" relationship="REFERENCES">
+      <point x="-30.5" y="-38.0" />
+      <point x="-96.0" y="414.0" />
+      <point x="-49.35294117647061" y="414.0" />
+      <point x="-33.5" y="49.5" />
+    </edge>
+    <edge source="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint_reste" target="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint" relationship="REFERENCES">
+      <point x="0.0" y="-60.5" />
+      <point x="662.7573529411764" y="404.0" />
+      <point x="576.75" y="404.0" />
+      <point x="0.0" y="159.5" />
+    </edge>
+    <edge source="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_label_user" target="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_label" relationship="REFERENCES">
+      <point x="-29.0" y="-38.0" />
+      <point x="65.2573529411764" y="404.0" />
+      <point x="41.26470588235293" y="404.0" />
+      <point x="41.26470588235293" y="394.0" />
+      <point x="17.64705882352939" y="394.0" />
+      <point x="33.5" y="49.5" />
+    </edge>
+    <edge source="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint_repartition_label" target="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_label" relationship="REFERENCES">
+      <point x="-68.0" y="-71.5" />
+      <point x="206.2573529411764" y="404.0" />
+      <point x="41.26470588235293" y="404.0" />
+      <point x="41.26470588235293" y="394.0" />
+      <point x="17.64705882352939" y="394.0" />
+      <point x="33.5" y="49.5" />
+    </edge>
+    <edge source="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint" target="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_project" relationship="REFERENCES">
+      <point x="42.25" y="-159.5" />
+      <point x="619.0" y="30.0" />
+      <point x="581.75" y="30.0" />
+      <point x="0.0" y="82.5" />
+    </edge>
+    <edge source="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_user" target="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_team" relationship="REFERENCES">
+      <point x="0.0" y="-137.5" />
+      <point x="274.2573529411764" y="30.0" />
+      <point x="367.1323529411764" y="30.0" />
+      <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_label_user" target="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_user" relationship="REFERENCES">
+      <point x="29.0" y="-38.0" />
+      <point x="123.2573529411764" y="414.0" />
+      <point x="274.2573529411764" y="414.0" />
+      <point x="0.0" y="137.5" />
+    </edge>
+    <edge source="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_user_labels" target="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_user" relationship="REFERENCES">
+      <point x="30.5" y="-38.0" />
+      <point x="-35.0" y="414.0" />
+      <point x="274.2573529411764" y="414.0" />
+      <point x="0.0" y="137.5" />
+    </edge>
+    <edge source="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint_repartition_label" target="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_user" relationship="REFERENCES">
+      <point x="0.0" y="-71.5" />
+      <point x="0.0" y="137.5" />
+    </edge>
+    <edge source="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint_repartition" target="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_user" relationship="REFERENCES">
+      <point x="-41.5" y="-71.5" />
+      <point x="437.75735294117635" y="414.0" />
+      <point x="274.2573529411764" y="414.0" />
+      <point x="0.0" y="137.5" />
+    </edge>
+    <edge source="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint_retrospective_comment" target="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint_retrospective" relationship="REFERENCES">
+      <point x="0.0" y="-71.5" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint_repartition" target="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint" relationship="REFERENCES">
+      <point x="41.5" y="-71.5" />
+      <point x="520.7573529411764" y="404.0" />
+      <point x="576.75" y="404.0" />
+      <point x="0.0" y="159.5" />
+    </edge>
+    <edge source="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint_repartition_label" target="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint" relationship="REFERENCES">
+      <point x="68.0" y="-71.5" />
+      <point x="342.2573529411764" y="404.0" />
+      <point x="576.75" y="404.0" />
+      <point x="0.0" y="159.5" />
+    </edge>
+    <edge source="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint_retrospective" target="3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint" relationship="REFERENCES">
+      <point x="0.0" y="-49.5" />
+      <point x="854.7573529411764" y="404.0" />
+      <point x="576.75" y="404.0" />
+      <point x="0.0" y="159.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.9231578947368421" showDependencies="false" x="426.0" y="305.0" />
+  <SelectedNodes>
+    <node>3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint_retrospective</node>
+    <node>3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint_repartition</node>
+    <node>3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_team</node>
+    <node>3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint</node>
+    <node>3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_project</node>
+    <node>3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint_retrospective_comment</node>
+    <node>3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint_reste</node>
+    <node>3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_user_labels</node>
+    <node>3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_sprint_repartition_label</node>
+    <node>3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_user</node>
+    <node>3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_label</node>
+    <node>3ee9b130-fcb8-413a-86bb-9db6d232a2ce.TABLE:scrumble.public.s_label_user</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
